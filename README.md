@@ -1,2 +1,0 @@
-# markreddick
-Personal website
