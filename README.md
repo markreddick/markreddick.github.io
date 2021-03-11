@@ -1,2 +1,2 @@
-# markreddick.github.io
+# markreddick
 Personal website
