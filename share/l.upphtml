@@ -1,16 +1,16 @@
 <!doctype html>
-<html lang=en>
+<html lang=${LANG%%_*}>
 
 <head>
 
 <title>Purple Ghost Software</title>
 
-<meta charset=UTF-8>
+<meta charset=${LANG##*.}>
 <meta name=viewport content='width=device-width'>
 
 <link rel=icon href=favicon.ico type=image/x-icon>
 <link rel=stylesheet
-href=s.css?2021-03-13T04:19:41Z>
+href=s.css?$(lmt -f '%Y-%m-%dT%H:%M:%SZ' s.css | cut -d' ' -f1)>
 
 </head>
 
@@ -23,9 +23,9 @@ href=s.css?2021-03-13T04:19:41Z>
 			</ul>
 		</nav>
 	</header>
-<p>
-hello, world
-</p>
+#!
+pp "$1"
+#!
 
 </body>
 
