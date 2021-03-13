@@ -1,32 +1,28 @@
 <!doctype html>
 <html lang=${LANG%%_*}>
+	<head>
+		<title>Purple Ghost Software</title>
 
-<head>
+		<meta charset=${LANG##*.}>
+		<meta name=viewport content='width=device-width'>
+		<meta name='color-scheme' content='dark light'>
 
-<title>Purple Ghost Software</title>
-
-<meta charset=${LANG##*.}>
-<meta name=viewport content='width=device-width'>
-
-<link rel=icon href=favicon.ico type=image/x-icon>
-<link rel=stylesheet
-href=s.css?$(lmt -f '%Y-%m-%dT%H:%M:%SZ' s.css | cut -d' ' -f1)>
-
-</head>
-
-<body>
-	<header>
-		<nav>
-			<ul>
-				<li><a href=/>Home</a></li>
-				<li><a href=/contact.html>Contact</a></li>
-			</ul>
-		</nav>
-	</header>
+		<link rel=icon href=favicon.ico type=image/x-icon>
+		<link rel=stylesheet href=s.css?$(lmt -f '%Y-%m-%dT%H:%M:%SZ' s.css | cut -d' ' -f1)>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<ul>
+					<li><a href=/>Home</a></li>
+					<li><a href=/contact.html>Contact</a></li>
+				</ul>
+			</nav>
+		</header>
 #!
 pp "$1"
 #!
 
-</body>
-
+	</body>
 </html>
+
