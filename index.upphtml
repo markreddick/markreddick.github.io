@@ -1,5 +1,37 @@
-<p>
-#!
-echo hello, world
-#!
-</p>
+<div class=pgs-banner>
+	<img src=img/pgs-logo-2.png>
+	<span class=pgs-name>
+		<span class=pgs-purple>purple</span><span class=pgs-ghost>ghost</span>
+	</span>
+</div>
+<div class=apps-banner>
+	<div class=app>
+		<a href=/step2.html>
+			<div class=app-name>Step2 Authenticator</div>
+			<img class=app-icon src=img/step2-512.png>
+		</a>
+		<div class=app-tag>One-Time Password Generator</div>
+		<div class=app-info>
+			Step2 generates one-time passwords that can be used for
+			2-step authentication for any service that supports Google Authenticator.
+			<br>
+			Step2 runs on iPhone and iPad and comes with an Apple Watch app so
+			you can view your authentication codes right on your wrist,
+			without needing to pull out your phone.
+		</div>
+	</div>
+	<div class=app>
+		<a href=/scry.html>
+			<div class=app-name>Scry</div>
+			<img class=app-icon src=img/scry-512.png>
+		</a>
+		<div class=app-tag>d20 v3.5 SRD</div>
+		<div class=app-info>
+			Scry is a quick reference to the D20 v3.5 SRD (System Reference Document).
+			This consists of races, classes, feats, skills, spells, magic items, monsters
+			and psionic powers compatible with the d20 System version of
+			\Dungeons &amp; Dragons (D&mp;D) and other various role playing games
+			from Wizards of the Coast.
+		</div>
+	</div>
+</div>
