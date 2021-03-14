@@ -19,6 +19,15 @@ header {
 	text-align: center;
 }
 
+.link {
+	color: #90278e;
+	cursor: pointer;
+}
+
+a:hover, .link:hover {
+	color: #adaeb1;
+}
+
 #nav-logo {
 	display: flex;
 	align-items: center;
@@ -72,6 +81,7 @@ nav a {
 	padding: 50px;
 	text-align: center;
 	background: white;
+	color: black;
 }
 
 .apps {
@@ -106,8 +116,105 @@ nav a {
 }
 
 footer {
-	background-color: #202020;
+	background-color: black;
 	color: white;
 	text-align: center;
 	padding: 40px;
 }
+
+#privacy-policy h1 {
+	text-align: center;
+}
+
+#privacy-policy .content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#privacy-policy p {
+	max-width: 500px;
+}
+
+#contact h1 {
+	text-align: center;
+}
+
+#discontinued h1 {
+	text-align: center;
+}
+
+#discontinued .content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 40px;
+}
+
+#discontinued .content p {
+	max-width: 500px;
+}
+
+#discontinued .download-links {
+	padding: 40px;
+	color: #202020;
+	background-color: white;
+	text-align: center;
+}
+
+#discontinued .download-links h2 {
+	text-align: center;
+}
+
+#discontinued .download-links p {
+	max-width: 500px;
+	display: inline-block;
+}
+
+#discontinued .download-links h2 img {
+	height: 50px;
+	vertical-align: middle;
+}
+
+#features img {
+	height: 50px;
+	float: left;
+}
+
+#features p {
+	margin-left: 70px;
+}
+
+.app-banner {
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+.app-banner img {
+	max-width: 100%;
+	width: 700px;
+}
+
+.app-banner .price {
+	font-size: 20pt;
+}
+
+.app-banner .app-store-button {
+	display: inline-block;
+	margin: 15px;
+}
+
+.content-bar {
+	padding: 20px 50px 20px 50px;
+}
+
+.content-bar-light {
+	background-color: white;
+	color: #202020;
+}
+
+.screenshots img {
+	max-height: 250px;
+}
+
