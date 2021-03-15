@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang=en>
+	<head>
+		<title>Purple Ghost Software</title>
+
+		<meta charset=UTF-8>
+		<meta name=viewport content='width=device-width'>
+		<meta name='color-scheme' content='dark light'>
+
+		<link rel=icon href=favicon.ico type=image/x-icon>
+		<link rel=stylesheet href=js/glightbox/dist/css/glightbox.css>
+		<link rel=stylesheet href=s.css?2021-03-14T20:26:32Z>
+	</head>
+	<body>
+		<header>
+			<a id=nav-logo href=/>
+				<img src=img/pgs-icon.png>
+				<span class=pgs-name>
+					<span class=pgs-purple>purple</span><span class=pgs-ghost>ghost</span>
+				</span>
+			</a>
+			<nav>
+				<span class=link id=nav-email-link>Contact</span>
+			</nav>
+		</header>
+<div id=privacy-policy>
+	<h1>Privacy Policy</h1>
+	<div class=content>
+		<p>
+			Purple Ghost Software will never sell or distribute your personal
+			information to a third party, except when necessary to provide a purchased
+			product or service.
+		</p>
+		<p>
+			We will never e-mail you unless you've asked us to.
+		</p>
+	</div>
+</div>
+	<footer>
+		<p>
+			<a href=/index.html>Home</a> |
+			<span class=link id=email-link>Contact Us</span> |
+			<a href=/privacy.html>Privacy Policy</a> |
+			<a href=/discontinued.html>iGadget / iRepo / TuneJack</a>
+		</p>
+		<p>
+			Copyright &copy; 2005 - 2021 Purple Ghost Software. All rights reserved.
+		</p>
+		<p>
+			icons by <a href=http://dryicons.com>http://dryicons.com</a>
+		</p>
+	</footer>
+	</body>
+</html>
+
+<script>
+	function sendEmail() {
+		var link = 'support';
+		link += '@';
+		link += 'purpleghost';
+		link += '.com';
+		link += '?subject=' + encodeURIComponent('Contact Us Message');
+		window.location.href = 'mailto:' + link;
+	}
+	var nav_contact_el = document.getElementById('nav-email-link');
+	var contact_el = document.getElementById('email-link');
+	
+	nav_contact_el.addEventListener('click', sendEmail);
+	if (contact_el) {
+		contact_el.addEventListener('click', sendEmail);
+	}
+</script>
