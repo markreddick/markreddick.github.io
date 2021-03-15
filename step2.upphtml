@@ -8,7 +8,7 @@
 			target=itunes_store
 		>
 			<img
-				src='http://linkmaker.itunes.apple.com/images/badges/en-us/badge_appstore-lrg.svg'
+				src='https://linkmaker.itunes.apple.com/images/badges/en-us/badge_appstore-lrg.svg'
 				style='width:165px;height:40px'
 				alt='App Store badge'
 			>
@@ -206,13 +206,13 @@
 		<p>
 			If you are receiving an error in the App Store when attempting to download Step2,
 			you can get the issue resolved by going to
-			<a href="http://www.apple.com/support/itunes">iTunes Store Customer Support</a>.
+			<a href="https://www.apple.com/support/itunes">iTunes Store Customer Support</a>.
 		</p>
 
 		<h3>What do I do if I have billing or purchasing issues with Step2?</h3>
 		<p>
 			To resolve billing or purchasing issues, you can get your issue resolved at
-			<a href="http://www.apple.com/support/itunes">iTunes Store Customer Support</a>.
+			<a href="https://www.apple.com/support/itunes">iTunes Store Customer Support</a>.
 		</p>
 	</div>
 </div>		
