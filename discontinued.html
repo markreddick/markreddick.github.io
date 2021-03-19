@@ -9,7 +9,7 @@
 
 		<link rel=icon href=favicon.ico type=image/x-icon>
 		<link rel=stylesheet href=js/glightbox/dist/css/glightbox.css>
-		<link rel=stylesheet href=s.css?2021-03-15T18:21:06Z>
+		<link rel=stylesheet href=s.css?2021-03-19T01:04:12Z>
 	</head>
 	<body>
 		<header>
@@ -107,8 +107,11 @@
 	}
 	var nav_contact_el = document.getElementById('nav-email-link');
 	var contact_el = document.getElementById('email-link');
-	
-	nav_contact_el.addEventListener('click', sendEmail);
+
+	if (nav_contact_el) {
+		nav_contact_el.addEventListener('click', sendEmail);
+	}
+
 	if (contact_el) {
 		contact_el.addEventListener('click', sendEmail);
 	}

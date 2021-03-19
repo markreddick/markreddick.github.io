@@ -47,6 +47,18 @@ a:hover, .link:hover {
 	height: 50px;
 }
 
+#features img {
+	margin-right: 10px;
+	height: 50px;
+	vertical-align: middle;
+}
+
+.feature {
+}
+
+.feature b {
+}
+
 .pgs-purple {
 	color: #90278e;
 }
@@ -92,7 +104,7 @@ nav a {
 
 .app {
 	display: inline-block;
-	width: 500px;
+	max-width: 500px;
 	vertical-align: top;
 	margin: 0 20px 0 20px;
 }
@@ -177,15 +189,6 @@ footer {
 	vertical-align: middle;
 }
 
-#features img {
-	height: 50px;
-	float: left;
-}
-
-#features p {
-	margin-left: 70px;
-}
-
 .app-banner {
 	text-align: center;
 	padding-bottom: 20px;
@@ -220,4 +223,28 @@ footer {
 
 #page-404 {
 	text-align: center;
+}
+
+@media (max-width: 400px) {
+
+	.pgs-banner .pgs-name {
+		font-size: 30pt;
+	}
+
+	.apps-banner {
+		padding: 20px;
+	}
+
+	.app {
+		margin: 0 10px 0 10px;
+	}
+
+	.content-bar {
+		padding: 10px 10px 10px 10px;
+	}
+
+	nav {
+		font-size: 14px;
+		text-align: right;
+	}
 }

@@ -59,8 +59,11 @@ pp "$1"
 	}
 	var nav_contact_el = document.getElementById('nav-email-link');
 	var contact_el = document.getElementById('email-link');
-	
-	nav_contact_el.addEventListener('click', sendEmail);
+
+	if (nav_contact_el) {
+		nav_contact_el.addEventListener('click', sendEmail);
+	}
+
 	if (contact_el) {
 		contact_el.addEventListener('click', sendEmail);
 	}

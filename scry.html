@@ -9,7 +9,7 @@
 
 		<link rel=icon href=favicon.ico type=image/x-icon>
 		<link rel=stylesheet href=js/glightbox/dist/css/glightbox.css>
-		<link rel=stylesheet href=s.css?2021-03-15T18:21:06Z>
+		<link rel=stylesheet href=s.css?2021-03-19T01:04:12Z>
 	</head>
 	<body>
 		<header>
@@ -61,72 +61,82 @@
 
 <div class='content-bar content-bar-dark'>
 	<div class=content_text>
+		<h2>Features</h2>
 		<div id=features>
-			<h2>Features</h2>
-			<img src=/img/icons/books.svg alt=Information> 
-			<p>
+			<div class=feature>
+				<img src=/img/icons/books.svg alt=Information> 
 				<b>d20 SRD 3.5</b><br>
-				Scry gives you quick and easy access to the d20 version 3.5
-				System Reference Document (SRD).
-			</p>
-			<p>
-				This information includes races, classes, feats, skills,
-				spells, magic items, monster and psionic powers compatible with
-				the d20 System version of Dungeons &amp; Dragons (D&amp;D)
-				and other various role playing games.
-			</p>
-			<p>
-				Unlike some other similar apps, Scry allows you to drill down
-				in categories to get to more specific subsets of data instead
-				of having to wade through a huge list of information.
-				For instance, you can view a list of all the spells, or drill
-				down to view all the spells for a particular class or drill
-				down even further to view only the spells for a particular
-				level for the selected class.
-			</p>
+				<p>
+					Scry gives you quick and easy access to the d20 version 3.5
+					System Reference Document (SRD).
+				</p>
+				<p>
+					This information includes races, classes, feats, skills,
+					spells, magic items, monster and psionic powers compatible with
+					the d20 System version of Dungeons &amp; Dragons (D&amp;D)
+					and other various role playing games.
+				</p>
+				<p>
+					Unlike some other similar apps, Scry allows you to drill down
+					in categories to get to more specific subsets of data instead
+					of having to wade through a huge list of information.
+					For instance, you can view a list of all the spells, or drill
+					down to view all the spells for a particular class or drill
+					down even further to view only the spells for a particular
+					level for the selected class.
+				</p>
+			</div>
 			
-			<img src=/img/icons/books.svg alt=Information> 
-			<p>
+			<div class=feature>
+				<img src=/img/icons/books.svg alt=Information> 
 				<b>Pathfinder</b><br>
-				Scry also gives you access to the
-				<a href='https://paizo.com/pathfinderRPG'>Pathfinder RPG</a>
-				reference database (PRD).
-			</p>
-			<p>
-				This information includes classes, domains, equipment, feats,
-				items, monsters, powers, races, skills, spells and traits.
-			</p>
-			<p>
-				You can switch between viewing the information for the d20
-				SRD and the Pathfinder reference database.
-			</p>
-			
-			<img src=/img/icons/red_flag.svg alt=Bookmarks> 
-			<p>
-				<b>Bookmarks</b><br>
-				You can create bookmarks for any page for quick access later.
-			</p>
-			<p>
-				Bookmarks can be organized into folders and sub-folders.
-			</p>
-			
-			<img src=/img/icons/search.svg alt=Search> 
-			<p>
-				<b>Search</b><br>
-				All the lists (spell lists, item lists, monster lists, etc) now
-				contain a search bar at the top which allows you to quickly
-				locate specific items in the list.
-			</p>
+				<p>
+					Scry also gives you access to the
+					<a href='https://paizo.com/pathfinderRPG'>Pathfinder RPG</a>
+					reference database (PRD).
+				</p>
+				<p>
+					This information includes classes, domains, equipment, feats,
+					items, monsters, powers, races, skills, spells and traits.
+				</p>
+				<p>
+					You can switch between viewing the information for the d20
+					SRD and the Pathfinder reference database.
+				</p>
+			</div>
 
-			<img src=/img/icons/star_full.svg alt=Universal app> 
-			<p>
+			<div class=feature>
+				<img src=/img/icons/red_flag.svg alt=Bookmarks> 
+				<b>Bookmarks</b><br>
+				<p>
+					You can create bookmarks for any page for quick access later.
+				</p>
+				<p>
+					Bookmarks can be organized into folders and sub-folders.
+				</p>
+			</div>
+
+			<div class=feature>
+				<img src=/img/icons/search.svg alt=Search> 
+				<b>Search</b><br>
+				<p>
+					All the lists (spell lists, item lists, monster lists, etc) now
+					contain a search bar at the top which allows you to quickly
+					locate specific items in the list.
+				</p>
+			</div>
+
+			<div class=feature>
+				<img src=/img/icons/star_full.svg alt=Universal app> 
 				<b>Universal App</b><br>
-				Scry is built as a Universal App which means it has been designed
-				for both iPhone and iPad in one application. So, the one app will
-				run natively on an iPhone, iPad or iPod touch. No need to pay
-				separately for the &quot;iPhone&quot; and &quot;iPad&quot;
-				versions like many other apps do.
-			</p>
+				<p>
+					Scry is built as a Universal App which means it has been designed
+					for both iPhone and iPad in one application. So, the one app will
+					run natively on an iPhone, iPad or iPod touch. No need to pay
+					separately for the &quot;iPhone&quot; and &quot;iPad&quot;
+					versions like many other apps do.
+				</p>
+			</div>
 		</div>
 	</div>
 </div>	
@@ -178,8 +188,11 @@
 	}
 	var nav_contact_el = document.getElementById('nav-email-link');
 	var contact_el = document.getElementById('email-link');
-	
-	nav_contact_el.addEventListener('click', sendEmail);
+
+	if (nav_contact_el) {
+		nav_contact_el.addEventListener('click', sendEmail);
+	}
+
 	if (contact_el) {
 		contact_el.addEventListener('click', sendEmail);
 	}
