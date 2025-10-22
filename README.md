@@ -53,13 +53,16 @@ So, now, when we want to deploye changes:
 
 1. update files on master branch
 2. process and create static HTML files in \_site
-    - $ npx @11ty/eleventy
+``
+    $ npx @11ty/eleventy
+``
 3. deploy
-    - $ cd \_site
-    - $ git add --all
-    - $ git commit -m 'deploy on gh-pages updated'
-    - $ git push origin gh-pages
-
+``
+    $ cd \_site
+    $ git add --all
+    $ git commit -m 'deploy on gh-pages updated'
+    $ git push origin gh-pages
+``
 
 
 
