@@ -57,12 +57,12 @@ So, now, when we want to deploye changes:
     $ npx @11ty/eleventy
 ``
 3. deploy
-``
+```
     $ cd \_site
     $ git add --all
     $ git commit -m 'deploy on gh-pages updated'
     $ git push origin gh-pages
-``
+```
 
 
 
