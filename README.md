@@ -26,4 +26,40 @@ in your browser on localhost.
 $ npx @11ty/eleventy --serve
 ``
 
+## GitHub Pages
+
+In order to get GitHub to use the files in the \_site subdirectory as the webroot, we have to put
+those files on a separate branch (gh-pages)
+
+https://gist.github.com/ErickPetru/b1b3138ab0fc6c82cd19ea3a1a944ba6
+
+The steps I took:
+
+1. checkout the main/master branch
+    $ git checkout master
+
+2. create an orphan branch so it doesn't effect the master branch
+    $ git checkout --orphan gh-pages
+    $ git reset --hard
+    $ git commit --allow-empty -m 'init gh-page branch'
+    $ git checkout master
+
+3. mount the branch as a subdirectory user git worktree
+    $ git worktree add \_site gh-pages
+
+4. be sure \_site/ is in .gitignore 
+
+So, now, when we want to deploye changes:
+
+1. update files on master branch
+2. process and create static HTML files in \_site
+    $ npx @11ty/eleventy
+3. deploy
+    $ cd \_site
+    $ git add --all
+    $ git commit -m 'deploy on gh-pages updated'
+    $ git push origin gh-pages
+
+
+
 
