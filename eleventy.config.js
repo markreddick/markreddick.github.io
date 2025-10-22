@@ -1,5 +1,6 @@
 export default function (eleventyConfig) {
-	// Output directory: _site
+	// Output directory: docs
+	eleventyConfig.setOutputDirectory('docs');
 
 	eleventyConfig.setTemplateFormats(['html', 'mustache', 'njk', '11ty.js']);
 
