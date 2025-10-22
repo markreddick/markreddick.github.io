@@ -1,28 +1,7 @@
-<!doctype html>
-<html lang=en>
-	<head>
-		<title>Purple Ghost Software</title>
-
-		<meta charset=UTF-8>
-		<meta name=viewport content='width=device-width'>
-		<meta name='color-scheme' content='dark light'>
-
-		<link rel=icon href=favicon.ico type=image/x-icon>
-		<link rel=stylesheet href=js/glightbox/dist/css/glightbox.css>
-		<link rel=stylesheet href=s.css?2023-03-17T19:50:23Z>
-	</head>
-	<body>
-		<header>
-			<a id=nav-logo href=/>
-				<img src=img/pgs-icon.png>
-				<span class=pgs-name>
-					<span class=pgs-purple>purple</span><span class=pgs-ghost>ghost</span>
-				</span>
-			</a>
-			<nav>
-				<span class=link id=nav-email-link>Contact</span>
-			</nav>
-		</header>
+---
+layout: layout.njk
+title: Purple Ghost Software
+---
 <div class=app-banner>
 	<h1>Step2 Authenticator</h1>
 	<img src=/img/banners/step2-banner.png alt='Step2 banner'>
@@ -43,140 +22,161 @@
 
 <div class='content-bar content-bar-light'>
 	<div class=content_text>
-		<div id=features>
-			<h2>Features</h2>
-
+		<h2>Features</h2>
+		<div class=features>
 			<img src=/img/icons/key.svg alt='Google Authenticator Codes'>
-			<p>
-				<b>Google Authenticator type codes</b><br>
-				Step2 generates Time-based One-Time Passwords (TOTP)
-				as well as HMAC-based One-Time Passwords (HOTP) just like Google Authenticator does
-				so it can be used for any services that support Google Authenticator.
-			</p>
-			
+			<div>
+				<p>
+					<b>Google Authenticator type codes</b><br>
+					Step2 generates Time-based One-Time Passwords (TOTP)
+					as well as HMAC-based One-Time Passwords (HOTP) just like Google Authenticator does
+					so it can be used for any services that support Google Authenticator.
+				</p>
+			</div>
+
 			<img src=/img/icons/apple.svg alt='Apple Watch'> 
-			<p>
-				<b>Apple Watch</b><br>
-				Step2 provides an Apple Watch app to allow you to quickly and easily
-				get your authentication codes with a glance to your wrist.
-			</p>
-			
-			<p>
-				The Step2 Apple Watch app provides a &quot;complication&quot; that can be added to your
-				watch face to give you quick access to the Step2 app with a tap on the watch face.
-			</p>
+			<div>
+				<p>
+					<b>Apple Watch</b><br>
+					Step2 provides an Apple Watch app to allow you to quickly and easily
+					get your authentication codes with a glance to your wrist.
+				</p>
+				
+				<p>
+					The Step2 Apple Watch app provides a &quot;complication&quot; that can be added to your
+					watch face to give you quick access to the Step2 app with a tap on the watch face.
+				</p>
+			</div>
 
 			<img src=/img/icons/security.svg alt=Secure> 
-			<p>
-				<b>Secure</b><br>
-				Step2 never sends any data across the internet. All the data stays on your
-				device. You are in complete control of your authentication code data.
-			</p>
+			<div>
+				<p>
+					<b>Secure</b><br>
+					Step2 never sends any data across the internet. All the data stays on your
+					device. You are in complete control of your authentication code data.
+				</p>
+			</div>
 
 			<img src=/img/icons/qrcode.svg alt='QR Codes'> 
-			<p>
-				<b>QR Codes</b><br>
-				To add accounts to Step2, most sites can provide a QR code to scan. With
-				Step2, you can simply scan the provided QR code to instantly add the account.
-			</p>
-			
+			<div>
+				<p>
+					<b>QR Codes</b><br>
+					To add accounts to Step2, most sites can provide a QR code to scan. With
+					Step2, you can simply scan the provided QR code to instantly add the account.
+				</p>
+			</div>
+
 			<img src=/img/icons/edit.svg alt='Manual Entry'> 
-			<p>
-				<b>Manual Entry</b><br>
-				Accounds can be added by manually entering the account data, including
-				your secret key.
-			</p>
-			
+			<div>
+				<p>
+					<b>Manual Entry</b><br>
+					Accounds can be added by manually entering the account data, including
+					your secret key.
+				</p>
+			</div>
+
 			<img src=/img/icons/heart.svg alt='Easy to Use'/> 
-			<p>
-				<b>Easy to use</b><br>
-				All of your authentication codes are presented on the first screen
-				in a scrolling list view. This makes it easy and quick for you to get to your codes. The accounts
-				can be easily rearranged in any order, so you could put your most used accounts near the
-				top of the list.
-			</p>
-			
-			<p>
-				Tapping on an account in the list instantly copies the code to the clipboard to make
-				it easy to then paste into the form on the service you are logging into.
-			</p>
+			<div>
+				<p>
+					<b>Easy to use</b><br>
+					All of your authentication codes are presented on the first screen
+					in a scrolling list view. This makes it easy and quick for you to get to your codes. The accounts
+					can be easily rearranged in any order, so you could put your most used accounts near the
+					top of the list.
+				</p>
+				<p>
+					Tapping on an account in the list instantly copies the code to the clipboard to make
+					it easy to then paste into the form on the service you are logging into.
+				</p>
+			</div>
 
 			<img src=/img/icons/unlock.svg alt='No Lock-In'> 
-			<p>
-				<b>No Lock-In</b><br>
-				Authentication codes work with the use of a &quot;secret key&quot;.
-				Many authenticator apps (including Google Authenticator) do not allow you to see this secret
-				key once the account has been setup, making it difficult to move to a different app/phone.
-			</p>
-			<p>
-				With Step2, you can easily view your secret key as well as display a QR code of your account
-				information. Both of these can be used to easily add your authenticator accounts
-				to another app/service or to make a backup of your data.
-			</p>
-			
+			<div>
+				<p>
+					<b>No Lock-In</b><br>
+					Authentication codes work with the use of a &quot;secret key&quot;.
+					Many authenticator apps (including Google Authenticator) do not allow you to see this secret
+					key once the account has been setup, making it difficult to move to a different app/phone.
+				</p>
+				<p>
+					With Step2, you can easily view your secret key as well as display a QR code of your account
+					information. Both of these can be used to easily add your authenticator accounts
+					to another app/service or to make a backup of your data.
+				</p>
+			</div>
+
 			<img src=/img/icons/refresh.svg alt='Swipe Support'> 
-			<p>
-				<b>Swipe Support</b><br>
-				Swiping right on an account displays a QR Code button. This button will
-				display the QR code for that account. This could then be
-				used to add the account to another phone or a screenshot could be taken of
-				the QR code as backup.
-			</p>
-			<p>
-				For accounts with HMAC-based (HOTP) passwords, a swipe to the left on the account
-				reveals a button that will increment the counter for that account, which causes a
-				new authentication code to be generated.
-			</p>
-			
+			<div>
+				<p>
+					<b>Swipe Support</b><br>
+					Swiping right on an account displays a QR Code button. This button will
+					display the QR code for that account. This could then be
+					used to add the account to another phone or a screenshot could be taken of
+					the QR code as backup.
+				</p>
+				<p>
+					For accounts with HMAC-based (HOTP) passwords, a swipe to the left on the account
+					reveals a button that will increment the counter for that account, which causes a
+					new authentication code to be generated.
+				</p>
+			</div>
+
 			<img src=/img/icons/workflow.svg alt=Multitasking>
-			<p>
-				<b>Multitasking</b><br>
-				Step2 supports Slide Over as well as Split View on iPad. This allows
-				you to have Step2 and another app open at the same time side-by-side. You can then easily copy
-				your authentication codes from Step2 and paste them into your app's window.
-			</p>
+			<div>
+				<p>
+					<b>Multitasking</b><br>
+					Step2 supports Slide Over as well as Split View on iPad. This allows
+					you to have Step2 and another app open at the same time side-by-side. You can then easily copy
+					your authentication codes from Step2 and paste them into your app's window.
+				</p>
+			</div>
 		</div>
 	</div>
 </div>
 				
 <div class='content-bar content-bar-dark'>
 	<div class=content_text>
-		<div id=features>
-			<h2>Technical</h2>
-				
+		<h2>Technical</h2>
+		<div class=features>
 			<img src=/img/icons/puzzle.svg alt='Code Types'> 
-			<p>
-				<b>Code Types</b><br>
-				Step2 can generate Time-based One-Time Passwords (TOTP) as well
-				as HMAC-based One-Time Passwords (HOTP).
-			</p>
-			<p>
-				Time-based (TOTP) passwords are the most common. These are generally 6 digit codes that
-				change every 30 seconds. When accessing a site that uses these, you simply enter the current
-				code when asked. This enhances security because even if someone sees one of your TOTP codes,
-				it is only valid for 30 seconds.
-			</p>
-			<p>
-				HMAC-based (HOTP) passwords are also known as &quot;counter&quot; based passwords. These codes
-				generally change after each use. There is a counter that you increment with a push of a button
-				in Step2 in the iOS app or on the Watch app. Each tap of the button increases the counter
-				and generates a new code.
-			</p>
+			<div>
+				<p>
+					<b>Code Types</b><br>
+					Step2 can generate Time-based One-Time Passwords (TOTP) as well
+					as HMAC-based One-Time Passwords (HOTP).
+				</p>
+				<p>
+					Time-based (TOTP) passwords are the most common. These are generally 6 digit codes that
+					change every 30 seconds. When accessing a site that uses these, you simply enter the current
+					code when asked. This enhances security because even if someone sees one of your TOTP codes,
+					it is only valid for 30 seconds.
+				</p>
+				<p>
+					HMAC-based (HOTP) passwords are also known as &quot;counter&quot; based passwords. These codes
+					generally change after each use. There is a counter that you increment with a push of a button
+					in Step2 in the iOS app or on the Watch app. Each tap of the button increases the counter
+					and generates a new code.
+				</p>
+			</div>
 
 			<img src=/img/icons/calculator.svg alt='Hashing Algorithms'>
-			<p>
-				<b>Hashing Algorithms</b><br>
-				Step2 supports SHA1, SHA256 as well as SHA512 hashing algorithms.
-				These are generally setup automatically when you create the account but
-				can be changed manually if required.
-			</p>
+			<div>
+				<p>
+					<b>Hashing Algorithms</b><br>
+					Step2 supports SHA1, SHA256 as well as SHA512 hashing algorithms.
+					These are generally setup automatically when you create the account but
+					can be changed manually if required.
+				</p>
+			</div>
 
 			<img src=/img/icons/ruler.svg alt='Code Length'> 
-			<p>
-				<b>Code Length</b><br>
-				Step2 supports 6 and 8 digits authentication codes. 6 digits codes
-				are the most common, but 8 digits codes are supported as well.
-			</p>
+			<div>
+				<p>
+					<b>Code Length</b><br>
+					Step2 supports 6 and 8 digits authentication codes. 6 digits codes
+					are the most common, but 8 digits codes are supported as well.
+				</p>
+			</div>
 		</div>
 	</div>
 </div>	
@@ -184,17 +184,17 @@
 <div class='content-bar content-bar-light'>
 	<div class=screenshots>
 		<h2>Screenshots</h2>
-		<a href=img/screenshots/step2-iphone-accounts-large.png class=glightbox>
-			<img src=img/screenshots/step2-iphone-accounts-small.png alt=image>
+		<a href=/img/screenshots/step2-iphone-accounts-large.png class=glightbox>
+			<img src=/img/screenshots/step2-iphone-accounts-small.png alt=image>
 		</a>
-		<a href=img/screenshots/step2-watch-accounts-large.png class=glightbox>
-			<img src=img/screenshots/step2-watch-accounts-small.png alt=image>
+		<a href=/img/screenshots/step2-watch-accounts-large.png class=glightbox>
+			<img src=/img/screenshots/step2-watch-accounts-small.png alt=image>
 		</a>
-		<a href=img/screenshots/step2-watch-detail-timer-large.png class=glightbox>
-			<img src=img/screenshots/step2-watch-detail-timer-small.png alt=image>
+		<a href=/img/screenshots/step2-watch-detail-timer-large.png class=glightbox>
+			<img src=/img/screenshots/step2-watch-detail-timer-small.png alt=image>
 		</a>
-		<a href=img/screenshots/step2-watch-detail-counter-large.png class=glightbox>
-			<img src=img/screenshots/step2-watch-detail-counter-small.png alt=image>
+		<a href=/img/screenshots/step2-watch-detail-counter-large.png class=glightbox>
+			<img src=/img/screenshots/step2-watch-detail-counter-small.png alt=image>
 		</a>
 	</div>
 </div>	
@@ -242,7 +242,7 @@
 	</div>
 </div>		
 
-<script src=js/glightbox/dist/js/glightbox.min.js></script>
+<script src=/js/glightbox/dist/js/glightbox.min.js></script>
 <script>
 	const lightbox = GLightbox({
 		touchNavigation: true,
@@ -251,40 +251,4 @@
 	console.log('create lgithbox');
 </script>
 
-	<footer>
-		<p>
-			<a href=/index.html>Home</a> |
-			<span class=link id=email-link>Contact Us</span> |
-			<a href=/privacy.html>Privacy Policy</a> |
-			<a href=/discontinued.html>iGadget / iRepo / TuneJack</a>
-		</p>
-		<p>
-			Copyright &copy; 2005 - 2023 Purple Ghost Software. All rights reserved.
-		</p>
-		<p>
-			icons by <a href=https://dryicons.com>https://dryicons.com</a>
-		</p>
-	</footer>
-	</body>
-</html>
 
-<script>
-	function sendEmail() {
-		var link = 'support';
-		link += '@';
-		link += 'purpleghost';
-		link += '.com';
-		link += '?subject=' + encodeURIComponent('Contact Us Message');
-		window.location.href = 'mailto:' + link;
-	}
-	var nav_contact_el = document.getElementById('nav-email-link');
-	var contact_el = document.getElementById('email-link');
-
-	if (nav_contact_el) {
-		nav_contact_el.addEventListener('click', sendEmail);
-	}
-
-	if (contact_el) {
-		contact_el.addEventListener('click', sendEmail);
-	}
-</script>
