@@ -15,7 +15,7 @@ without any processing being done on them.
 
 ``
 $ npx @11ty/eleventy
-```
+``
 
 ## Serving locally
 
