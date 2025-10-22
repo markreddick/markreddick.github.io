@@ -1,0 +1,255 @@
+body {
+	background-color: #202020;
+	color: white;
+	font-family: Verdana, sans-serif;
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #90278e;
+}
+
+header {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	background-color: #ffffff;
+	color: black;
+	text-align: center;
+}
+
+.link {
+	color: #90278e;
+	cursor: pointer;
+}
+
+a:hover, .link:hover {
+	color: #adaeb1;
+}
+
+#nav-logo {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.pgs-banner .pgs-name {
+	font-size: 40pt;
+	display: block;
+}
+
+#nav-logo .pgs-name {
+	font-size: 20pt;
+}
+
+#nav-logo img {
+	height: 50px;
+}
+
+.features {
+	display: grid;
+	grid-template-columns: 70px 1fr;
+	row-gap: 20px;
+}
+
+.features img {
+	margin-right: 10px;
+	height: 50px;
+	vertical-align: middle;
+}
+
+.features p {
+	display: inline
+}
+
+.pgs-purple {
+	color: #90278e;
+}
+
+.pgs-ghost {
+	color: #adaeb1;
+}
+
+nav {
+	padding: 16px;
+	font-size: 20px;
+}
+
+nav img {
+	height: 50px;
+}
+
+nav a {
+	padding: 0 20px 0 20px;
+}
+
+.pgs-banner {
+	padding: 50px;
+	text-align: center;
+}
+
+.pgs-banner img {
+	height: 200px;
+}
+
+.apps-banner {
+	padding: 50px;
+	text-align: center;
+	background: white;
+	color: black;
+}
+
+.apps {
+	background-color: #c3c3c3;
+	color: black;
+	text-align: center;
+}
+
+.app {
+	display: inline-block;
+	max-width: 500px;
+	vertical-align: top;
+	margin: 0 20px 0 20px;
+}
+
+.app-icon {
+	height: 200px;
+	border-radius: 20px;
+	margin: 10px;
+}
+	
+.app-name {
+	font-size: 30pt;
+}
+
+.app-tag {
+	font-size: 20pt;
+}
+
+.app-info {
+	font-size: 8pt;
+}
+
+footer {
+	background-color: black;
+	color: white;
+	text-align: center;
+	padding: 40px;
+}
+
+#privacy-policy h1 {
+	text-align: center;
+}
+
+#privacy-policy .content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#privacy-policy p {
+	max-width: 500px;
+}
+
+#contact h1 {
+	text-align: center;
+}
+
+#discontinued h1 {
+	text-align: center;
+}
+
+#discontinued .content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 40px;
+}
+
+#discontinued .content p {
+	max-width: 500px;
+}
+
+#discontinued .download-links {
+	padding: 40px;
+	color: #202020;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#discontinued .download-links h2 {
+}
+
+#discontinued .download-links p {
+	max-width: 500px;
+}
+
+#discontinued .download-links h2 img,
+#discontinued .download-links h3 img {
+	height: 50px;
+	vertical-align: middle;
+}
+
+.app-banner {
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+.app-banner img {
+	max-width: 100%;
+	width: 700px;
+}
+
+.app-banner .price {
+	font-size: 20pt;
+}
+
+.app-banner .app-store-button {
+	display: inline-block;
+	margin: 15px;
+}
+
+.content-bar {
+	padding: 20px 50px 20px 50px;
+}
+
+.content-bar-light {
+	background-color: white;
+	color: #202020;
+}
+
+.screenshots img {
+	max-height: 250px;
+}
+
+#page-404 {
+	text-align: center;
+}
+
+@media (max-width: 400px) {
+
+	.pgs-banner .pgs-name {
+		font-size: 30pt;
+	}
+
+	.apps-banner {
+		padding: 20px;
+	}
+
+	.app {
+		margin: 0 10px 0 10px;
+	}
+
+	.content-bar {
+		padding: 10px 10px 10px 10px;
+	}
+
+	nav {
+		font-size: 14px;
+		text-align: right;
+	}
+}
